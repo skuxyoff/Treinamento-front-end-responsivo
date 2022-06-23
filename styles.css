@@ -1,0 +1,226 @@
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        height: 85vh;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 15px;
+    }
+
+    .app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 85px;
+    }
+
+    .app2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: hsla(300, 46%, 22%, 0.123);
+    }
+
+    .flex_top {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 85px;
+    }
+
+    .evaluate_box {
+
+        display: grid;
+    }
+
+
+    .stars {
+        width: 2.5vw;
+        margin-left: 1vw;
+    }
+
+    /* text's */
+
+    .title {
+        margin-top: 20px;
+        width: 35vw;
+        font-size: 55px;
+        font-weight: 900;
+        color: hsl(300, 46%, 22%);
+
+        display: flex;
+    }
+
+    .description_title {
+        font-size: 17px;
+        line-height: 25px;
+        width: 87%;
+        color: hsl(303, 10%, 53%);
+        font-weight: 400;
+        justify-content: center;
+    }
+
+    .description_stars {
+
+        font-size: 15px;
+        font-weight: 700;
+        color: hsl(300, 46%, 22%);
+        align-items: center;
+        margin-left: 1vw;
+
+    }
+
+    /* grid */
+
+    .parent {
+        display: grid;
+        justify-content: center;
+        margin-top: 3.8vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+
+    .div2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div4 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    /*upper content*/
+
+    .upper-content {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px 0px;
+        padding: 0 150px;
+        flex-direction: column;
+    }
+
+    .upper-content h3 {
+        font-size: 1.15rem;
+        line-height: 25px;
+        color: hsl(303, 10%, 53%);
+        font-weight: 400;
+        justify-content: center;
+    }
+
+    .upper-content h1 {
+        margin-top: 20px;
+        width: 35vw;
+        font-size: 55px;
+        font-weight: 900;
+        color: hsl(300, 46%, 22%);
+
+        display: flex;
+    }
+
+    .description_stars h5 {
+        display: flex;
+        width: 32vw;
+        font-size: 0.975rem;
+        margin-left: 40px;
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+    }
+
+    /*down conteudo*/
+    .down-content {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px 0px;
+        padding: 0 150px;
+        flex-direction: column;
+    }
+
+    /* caixa de stars */
+
+    .stars_box_1 {
+        background-color: hsla(296, 43%, 93%, 0.479);
+        width: 35vw;
+        height: 1vw;
+        max-width: 10vw, 10vw;
+        margin-left: 2vw;
+        margin-top: 3%;
+        border-radius: 10px;
+        padding: 1.2vw 20px;
+
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .stars_box_2 {
+        background-color: hsla(296, 43%, 93%, 0.479);
+        width: 35vw;
+        height: 1vw;
+        max-width: 10vw, 10vw;
+        margin-left: 5vw;
+        margin-top: 1.5%;
+        border-radius: 10px;
+        padding: 1.2vw 20px;
+
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .stars_box_3 {
+        background-color: hsla(296, 43%, 93%, 0.479);
+        width: 35vw;
+        height: 1vw;
+        max-width: 10vw, 10vw;
+        margin-left: 8vw;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        padding: 1.2vw 20px;
+
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .parent2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
